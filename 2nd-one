@@ -1,0 +1,149 @@
+# Create a shorter version of the presentation with concise points
+prs_short = Presentation()
+
+# Title Slide
+slide_layout = prs_short.slide_layouts[0]
+slide = prs_short.slides.add_slide(slide_layout)
+title = slide.shapes.title
+subtitle = slide.placeholders[1]
+
+title.text = "Marketing Research Section for Bank Website"
+subtitle.text = "Key Features Overview"
+
+# Content Slide: Research Categories
+slide_layout = prs_short.slide_layouts[1]
+slide = prs_short.slides.add_slide(slide_layout)
+title = slide.shapes.title
+title.text = "Research Categories"
+content = slide.placeholders[1]
+content.text = (
+    "1. Market Analysis\n"
+    "2. Consumer Insights\n"
+    "3. Competitor Analysis\n"
+    "4. Product Research"
+)
+
+# Content Slide: Reports and Publications
+slide = prs_short.slides.add_slide(slide_layout)
+title = slide.shapes.title
+title.text = "Reports and Publications"
+content = slide.placeholders[1]
+content.text = (
+    "1. Annual Reports\n"
+    "2. Quarterly Updates\n"
+    "3. Special Reports"
+)
+
+# Content Slide: Data and Analytics Tools
+slide = prs_short.slides.add_slide(slide_layout)
+title = slide.shapes.title
+title.text = "Data and Analytics Tools"
+content = slide.placeholders[1]
+content.text = (
+    "1. Interactive Dashboards\n"
+    "2. Data Download\n"
+    "3. Custom Reports"
+)
+
+# Content Slide: Surveys and Feedback
+slide = prs_short.slides.add_slide(slide_layout)
+title = slide.shapes.title
+title.text = "Surveys and Feedback"
+content = slide.placeholders[1]
+content.text = (
+    "1. Customer Surveys\n"
+    "2. Interactive Polls\n"
+    "3. Feedback Forms"
+)
+
+# Content Slide: Educational Resources
+slide = prs_short.slides.add_slide(slide_layout)
+title = slide.shapes.title
+title.text = "Educational Resources"
+content = slide.placeholders[1]
+content.text = (
+    "1. Glossary\n"
+    "2. Guides and Tutorials\n"
+    "3. Webinars and Workshops"
+)
+
+# Content Slide: News and Updates
+slide = prs_short.slides.add_slide(slide_layout)
+title = slide.shapes.title
+title.text = "News and Updates"
+content = slide.placeholders[1]
+content.text = (
+    "1. Latest News\n"
+    "2. Newsletter Subscription\n"
+    "3. Press Releases"
+)
+
+# Content Slide: Interactive Features
+slide = prs_short.slides.add_slide(slide_layout)
+title = slide.shapes.title
+title.text = "Interactive Features"
+content = slide.placeholders[1]
+content.text = (
+    "1. Discussion Forums\n"
+    "2. Expert Q&A\n"
+    "3. Chat Support"
+)
+
+# Content Slide: User Personalization
+slide = prs_short.slides.add_slide(slide_layout)
+title = slide.shapes.title
+title.text = "User Personalization"
+content = slide.placeholders[1]
+content.text = (
+    "1. Account Login\n"
+    "2. Saved Reports\n"
+    "3. Alert System"
+)
+
+# Content Slide: Security and Compliance
+slide = prs_short.slides.add_slide(slide_layout)
+title = slide.shapes.title
+title.text = "Security and Compliance"
+content = slide.placeholders[1]
+content.text = (
+    "1. Data Privacy\n"
+    "2. Compliance Information\n"
+    "3. Secure Access"
+)
+
+# Content Slide: Accessibility and Usability
+slide = prs_short.slides.add_slide(slide_layout)
+title = slide.shapes.title
+title.text = "Accessibility and Usability"
+content = slide.placeholders[1]
+content.text = (
+    "1. Mobile-Friendly Design\n"
+    "2. Search Functionality\n"
+    "3. Multi-Language Support"
+)
+
+# Content Slide: Integration with Other Bank Services
+slide = prs_short.slides.add_slide(slide_layout)
+title = slide.shapes.title
+title.text = "Integration with Other Bank Services"
+content = slide.placeholders[1]
+content.text = (
+    "1. Cross-Platform Integration\n"
+    "2. API Access"
+)
+
+# Content Slide: Performance Metrics
+slide = prs_short.slides.add_slide(slide_layout)
+title = slide.shapes.title
+title.text = "Performance Metrics"
+content = slide.placeholders[1]
+content.text = (
+    "1. Usage Analytics\n"
+    "2. Feedback Loop"
+)
+
+# Save the shorter presentation
+pptx_short_path = "/mnt/data/Short_Marketing_Research_for_Bank_Website.pptx"
+prs_short.save(pptx_short_path)
+
+pptx_short_path
